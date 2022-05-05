@@ -8,7 +8,7 @@ pipeline {
     stages{
         stage('step 1 git pull'){
             steps {
-                git url: 'https://github.com/AJAYUPADHYAY007/scientificCalc-master.git', branch: 'master',
+                git url: 'https://github.com/AJAYUPADHYAY007/scientific_calc.git', branch: 'master',
                 credentialsId: 'git-cred'
             }
         }
