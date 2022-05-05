@@ -1,0 +1,13 @@
+---
+- name: Create Container of app
+  hosts: all
+  tasks:
+    - name: web container
+      docker_container:
+        name: testcalci
+        image: ajayupadhyay007/scientificcalc-master
+        state: started
+        ports:
+          - "8082:8082"
+        tty: true
+        detach: true
