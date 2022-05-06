@@ -8,6 +8,6 @@
         image: ajayupadhyay007/scientificcalc-master
         state: started
         ports:
-          - "8082:8082"
+          - "8083:8083"
         tty: true
         detach: true
